@@ -1,0 +1,78 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Usuarios {
+  id_usuario Int @id @default(autoincrement())
+  nombre_usuario String 
+  apellido_usuario String
+  email_usuario String
+  contra_usuario String  
+  rol_usuarios String?  //el signo de interrogacion es para que se opcional
+  celular_usuarios Int?
+  ci_usuarios Int?
+  direccion_usuarios String?
+
+  ventas Venta []
+}
+
+model Categorias{
+  id_categorias Int @id @default(autoincrement())
+  produc Productos []
+  nombre_categoria String
+}
+
+model Productos{
+  id_productos Int @id @default(autoincrement())
+  nombre_productos String 
+  precio_productos Decimal
+  foto_productos String
+  descripcion_productos String
+  categ Categorias @relation(fields: [categId], references: [id_categorias])
+  categId Int
+  
+  rest Restaurantes []
+  detVentas Detalle_venta []
+}
+
+model Restaurantes{
+  id_restaurantes Int @id @default(autoincrement())
+  restaurantes_nombre String 
+  telefono_restaurantes String
+  descripcion_restaurantes String
+  produc Productos @relation(fields: [prouctId], references: [id_productos])
+  prouctId Int
+}
+
+model Venta{
+  id_venta Int @id @default(autoincrement())
+  users Usuarios @relation(fields: [useerId], references: [id_usuario])
+  useerId Int
+  detall Detalle_venta @relation(fields: [detallId], references: [id_detalle_venta])
+  detallId Int
+  monto_total Decimal
+
+}
+
+model Detalle_venta{
+id_detalle_venta Int @id @default(autoincrement())
+product Productos @relation(fields: [productId], references: [id_productos])
+productId Int
+fecha DateTime
+detalle String?
+cantidad Int
+precio_unitario Decimal
+
+ventas Venta[]
+}

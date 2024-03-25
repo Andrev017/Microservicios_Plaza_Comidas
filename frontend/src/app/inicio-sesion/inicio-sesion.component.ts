@@ -3,12 +3,12 @@ import { ButtonModule } from 'primeng/button';
 import { PasswordModule } from 'primeng/password';
 
 @Component({
-  selector: 'app-registro',
+  selector: 'app-inicio-sesion',
   standalone: true,
   imports: [ButtonModule, PasswordModule],
-  templateUrl: './registro.component.html',
-  styleUrl: './registro.component.css'
+  templateUrl: './inicio-sesion.component.html',
+  styleUrl: './inicio-sesion.component.css'
 })
-export class RegistroComponent {
+export class InicioSesionComponent {
 
 }

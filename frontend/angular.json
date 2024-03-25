@@ -85,7 +85,7 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/img/icono_plaza.png",
+              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [

@@ -85,11 +85,14 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/favicon.ico",
+              "src/img/icono_plaza.png",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
+              
             ],
             "scripts": []
           }
@@ -98,6 +101,6 @@
     }
   },
   "cli": {
-    "analytics": "17c0381c-53d7-4eb1-a1ff-bdd5e3190720"
+    "analytics": "fe184490-0e47-4dbf-9d6f-7dd3d318371d"
   }
 }

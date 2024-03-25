@@ -5,6 +5,7 @@ const { PrismaClient } = require("@prisma/client");
 const app = express();
 const prisma = new PrismaClient();
 
+
 app.post("/categoria", async (req, res) => {
     const dataUser = await prisma.categorias.create({
         data: {

@@ -15,7 +15,6 @@ app.post("/categoria", async (req, res) => {
     res.json({ message: "dato creado" })
 })
 
-
 app.get("/categoria", async (req, res) => {
     const datos_categ = await prisma.categorias.findMany({
 

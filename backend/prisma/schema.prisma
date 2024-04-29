@@ -76,3 +76,5 @@ model Detalle_venta {
 
   ventas Venta[]
 }
+
+

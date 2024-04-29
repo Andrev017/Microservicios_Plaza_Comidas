@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -12,7 +12,7 @@ body {
     background-color: #e0aaff;
 }
 
-/*--------------------------------------------PARTE DEL CENTRO--------------------------------------*/
+/--------------------------------------------PARTE DEL CENTRO--------------------------------------
 #map {
     background-color: #264653;
     display: flex;
@@ -40,4 +40,4 @@ body {
     align-items: center;
     height: 150px;
     padding: 8px 20%;
-}
+}*/

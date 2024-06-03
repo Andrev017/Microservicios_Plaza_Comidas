@@ -1,0 +1,56 @@
+.imge_1{
+    background-color: #1d35576c;
+    z-index: 5;
+}
+.img_1{
+    
+    height:40em;
+    width:100%;
+    z-index: -5;
+    object-fit: cover;
+
+}
+.texto_content{
+    color: #fff;
+    position: absolute;
+    width: 97%;
+    text-align: left;
+    padding: 5%;
+    margin-left: 20px;
+    top: 280px;
+    z-index: 10;
+    background-color: #0005;
+}
+
+.texto_content p {
+    width: 50%;
+    font-size: 25px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.texto_content h2{
+    font-size: 30px;
+}
+h1{
+    color: #0851b86c;
+    font-size: 60px;
+    
+}
+
+.content_2{
+    background-color: #ccc;
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    place-items: center;
+
+}
+.caja{
+    background-color: #ffff;
+    width: 90%;
+    height: 50%;
+    justify-content: center;
+    display: grid;
+    column-gap: 50px;
+}

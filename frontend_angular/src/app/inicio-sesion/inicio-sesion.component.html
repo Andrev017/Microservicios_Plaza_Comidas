@@ -1,0 +1,26 @@
+<div class="padre">
+    <section class="container">
+        <br><br>
+        <h1>Inicio de Sesión</h1>
+    
+        <form action="#">
+    
+            <div class="form-control">
+                <input type="text" name="email" required placeholder="Gmail" title="Debe contener @">
+                <input name="password" type="password" required placeholder="Contraseña" maxlength="50" minlength="6">
+                
+            </div>
+    
+    
+    
+            <button class="btn"  (click)="redirect()">Iniciar Sesion</button>
+            
+            <br><br>
+            <span> No tengo una cuenta <a routerLink="/registro"> Registrarse</a></span>
+        </form>
+    
+    </section>
+</div>
+
+<router-outlet></router-outlet>
+

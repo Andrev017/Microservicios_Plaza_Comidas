@@ -1,0 +1,56 @@
+.padre {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.section_ssesion {
+    background-color: #1D3557;
+    padding: 20px 70px;
+    border: 30px;
+    width: 380px;
+    height: 410px;
+    color: #fff;
+}
+.section_ssesion h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.formulario {
+    text-shadow: #219ebc;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.formulario input {
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 80%;
+    padding: 10px;
+    color: #fff;
+}
+
+.boton_sesion{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: #219ebc;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 5px;
+    color: #fff;
+}
+.p{
+    color: #219ebc;
+}

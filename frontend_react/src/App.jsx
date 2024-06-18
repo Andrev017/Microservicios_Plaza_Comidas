@@ -18,37 +18,23 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navbar />}>
-          <Route path="/" element={<Index></Index>}></Route>
+          <Route index element={<Index />} />
+          <Route path="View/ubicaion" element={<Ubicaion />} />
         </Route>
-
-
-        <Route path="/" element={<Navbar />}>
-          <Route path="/View/ubicaion" element={<Ubicaion></Ubicaion>}></Route>
+        <Route path="Registro" element={<Registro />} />
+        <Route path="Inicio sesion" element={<Inicio_sesion />} />
+        <Route path="/" element={<Footer />} />
+        <Route path="/admin" element={<Sidebar />}>
+          <Route index element={<Index_admin />}></Route>
+          <Route
+            path="restaurante_admin"
+            element={<Restaurante_admin />}
+          ></Route>
+          <Route path="productos" element={<Producto_admin />}></Route>
+          <Route path="registro_trab" element={<Registro_admin />}></Route>
+          <Route path="reporte_de_ventas" element={<Reporte_ventas />}></Route>
         </Route>
-
-
-
-
-        <Route path="/Registro" element={<Registro></Registro>} />
-        <Route path="/Inicio sesion" element={<Inicio_sesion />} />
-
       </Routes>
-      <Routes>
-        <Route path="/" element={<Footer />}></Route>
-      </Routes>
-
-
-      <Routes>
-        <Route path="/admin" element={<Sidebar/>}></Route>
-        <Route path="/index" element={<Index_admin/>}></Route>
-        <Route path="/restaurante admin" element={<Restaurante_admin/>}></Route>
-        <Route path="/productos" element={<Producto_admin/>}></Route>
-        <Route path="/registro_trab" element={<Registro_admin/>}></Route>
-        <Route path="/reporte de ventas" element={<Reporte_ventas/>}></Route>
-      </Routes>
-
-
-
     </BrowserRouter>
   );
 }

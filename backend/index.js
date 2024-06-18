@@ -10,6 +10,7 @@ const controller_categorias = require('./controller/categoria_controller')
 const controller_restaurantes = require('./controller/restaurantes_controller')
 const controler_venta = require('./controller/venta_controller')
 const controler_detalleventa = require('./controller/detalleventa_controller')
+const controlador_login = require('./controller/controller_login')
 
 /*LAAMR A LA FUNCION DE EXPRES*/
 /*PARA EL SERVIDOR*/
@@ -26,6 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use(controller_usuario);
+app.use(controlador_login);
 app.use(controller_productos);
 app.use(controller_categorias);
 app.use(controller_restaurantes);

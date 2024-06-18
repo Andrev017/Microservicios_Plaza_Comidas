@@ -18,10 +18,10 @@ model Usuarios {
   id_usuario         Int     @id @default(autoincrement())
   nombre_usuario     String
   apellido_usuario   String
-  email_usuario      String
+  email_usuario      String?
   contra_usuario     String
-  rol_usuarios       String? //el signo de interrogacion es para que se opcional
-  celular_usuarios   Int?
+  rol_usuarios       String //el signo de interrogacion es para que se opcional
+  celular_usuarios   Int
   ci_usuarios        Int?
   direccion_usuarios String?
 

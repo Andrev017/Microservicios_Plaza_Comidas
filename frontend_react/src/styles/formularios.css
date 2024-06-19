@@ -19,6 +19,20 @@
     & > p {
       color: #fff;
     }
+    & > label {
+      color: #fff;
+      font-size: 0.9em;
+    }
+    & > select {
+      width: 60%;
+      background-color: transparent;
+      color: #fff;
+      padding: 0.5em;
+      outline: none;
+      & > option {
+        background-color: #0f223dfd;
+      }
+    }
     & > input {
       background-color: transparent;
       width: 100%;

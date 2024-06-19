@@ -37,7 +37,20 @@ export const options = {
   },
 };
 
-const labels = ["January", "February", "March", "April", "May", "June", "July"];
+const labels = [
+  "enero",
+  "febrero",
+  "marzo",
+  "abril",
+  "mayo",
+  "junio",
+  "julio",
+  "agosto",
+  "septiembre",
+  "octubre",
+  "noviembre",
+  "diciembre",
+];
 
 export const data = {
   labels,
@@ -45,7 +58,7 @@ export const data = {
     {
       fill: true,
       label: "ventas",
-      data: [10, 20, 30],
+      data: [0, 0, 0, 0, 0, 3, 0, 0, 0],
       borderColor: "rgb(53, 162, 235)",
       backgroundColor: "rgba(53, 162, 235, 0.5)",
     },

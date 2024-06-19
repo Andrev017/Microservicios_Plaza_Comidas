@@ -1,0 +1,33 @@
+[
+    {
+      "Nombre Usuario": "María",
+      "apellido": "García",
+      "producto": "Pizza",
+      "fecha": "2024-06-21",
+      "detalle": "Pedido a domicilio",
+      "cantidad": 1,
+      "precio_unitario": 15.99,
+      "monto_total": 15.99
+    },
+    {
+      "Nombre Usuario": "Pedro",
+      "apellido": "López",
+      "producto": "Ensalada César",
+      "fecha": "2024-06-20",
+      "detalle": "Para llevar",
+      "cantidad": 2,
+      "precio_unitario": 8.5,
+      "monto_total": 17
+    },
+    {
+      "Nombre Usuario": "Ana",
+      "apellido": "Martínez",
+      "producto": "Sushi",
+      "fecha": "2024-06-19",
+      "detalle": "Consumo en restaurante",
+      "cantidad": 3,
+      "precio_unitario": 12,
+      "monto_total": 36
+    }
+  ]
+  

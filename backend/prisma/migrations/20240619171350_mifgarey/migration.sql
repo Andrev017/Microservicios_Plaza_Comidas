@@ -29,6 +29,7 @@ CREATE TABLE `Productos` (
     `foto_productos` VARCHAR(191) NOT NULL,
     `descripcion_productos` VARCHAR(191) NOT NULL,
     `categId` INTEGER NOT NULL,
+    `rest` INTEGER NOT NULL,
 
     PRIMARY KEY (`id_productos`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -39,7 +40,6 @@ CREATE TABLE `Restaurantes` (
     `restaurantes_nombre` VARCHAR(191) NOT NULL,
     `telefono_restaurantes` INTEGER NOT NULL,
     `descripcion_restaurantes` VARCHAR(191) NOT NULL,
-    `prouctId` INTEGER NOT NULL,
 
     PRIMARY KEY (`id_restaurantes`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -70,7 +70,7 @@ CREATE TABLE `Detalle_venta` (
 ALTER TABLE `Productos` ADD CONSTRAINT `Productos_categId_fkey` FOREIGN KEY (`categId`) REFERENCES `Categorias`(`id_categorias`) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE `Restaurantes` ADD CONSTRAINT `Restaurantes_prouctId_fkey` FOREIGN KEY (`prouctId`) REFERENCES `Productos`(`id_productos`) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE `Productos` ADD CONSTRAINT `Productos_rest_fkey` FOREIGN KEY (`rest`) REFERENCES `Restaurantes`(`id_restaurantes`) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE `Venta` ADD CONSTRAINT `Venta_useerId_fkey` FOREIGN KEY (`useerId`) REFERENCES `Usuarios`(`id_usuario`) ON DELETE RESTRICT ON UPDATE CASCADE;

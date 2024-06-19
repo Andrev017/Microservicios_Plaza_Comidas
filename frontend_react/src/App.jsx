@@ -8,10 +8,10 @@ import Footer from "./components/footer";
 import Ubicaion from "./View/ubicaion";
 import Index_admin from "./admin/index_admin";
 import Sidebar from "./components/sidebar";
-import Restaurante_admin from "./admin/restaurante_admin";
-import Producto_admin from "./admin/producto_admin";
+import Producto_admin from "./admin/productos/producto_admin";
 import Registro_admin from "./admin/registro_admin";
-import Reporte_ventas from "./admin/reporte_ventas";
+import Reporte_ventas from "./admin/ventas/reporte_ventas";
+import Restaurante_admin from "./admin/restaurante/restaurante_admin";
 
 function App() {
   return (

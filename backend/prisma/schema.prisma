@@ -35,25 +35,27 @@ model Categorias {
 }
 
 model Productos {
-  id_productos          Int        @id @default(autoincrement())
+  id_productos          Int             @id @default(autoincrement())
   nombre_productos      String
   precio_productos      Decimal
   foto_productos        String
   descripcion_productos String
-  categ                 Categorias @relation(fields: [categId], references: [id_categorias])
+  categ                 Categorias      @relation(fields: [categId], references: [id_categorias])
   categId               Int
-
-  rest      Restaurantes[]
-  detVentas Detalle_venta[]
+  // rest      Restaurantes[]
+  restaurant            Restaurantes    @relation(fields: [rest], references: [id_restaurantes])
+  rest                  Int
+  detVentas             Detalle_venta[]
 }
 
 model Restaurantes {
-  id_restaurantes          Int       @id @default(autoincrement())
+  id_restaurantes          Int         @id @default(autoincrement())
   restaurantes_nombre      String
   telefono_restaurantes    Int
   descripcion_restaurantes String
-  produc                   Productos @relation(fields: [prouctId], references: [id_productos])
-  prouctId                 Int
+  // produc                   Productos @relation(fields: [prouctId], references: [id_productos])
+  // prouctId                 Int
+  Productos                Productos[]
 }
 
 model Venta {
@@ -76,5 +78,3 @@ model Detalle_venta {
 
   ventas Venta[]
 }
-
-
